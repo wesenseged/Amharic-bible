@@ -1,6 +1,6 @@
 # 📖 Amharic Bible
 
-<p align="center"><img width="128" src="http://localhost:5173/projects/Ebible.png">
+<p align="center"><img width="128" src="https://wesen.vercel.app/projects/Ebible.png">
 <h1 align="center">Amharic Bible</h1>
 
 <p align="center"> A modern, offline Amharic Bible reader built with Kirigami and Qt6.
@@ -11,9 +11,9 @@
 </p>
 
 
-| ![Screenie 1](https://raw.githubusercontent.com/wesenseged/amharic-bible/main/screenshots/book-selector.png) | ![Screenie 2](https://raw.githubusercontent.com/wesenseged/amharic-bible/main/screenshots/main-view.png) |
+| ![Screenie 1](https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selector.png) | ![Screenie 2](https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-view.png) |
 |:---------------------------------------------------------------:|:---------------------------------------------------------------:|
-| ![Screenie 3](https://raw.githubusercontent.com/wesenseged/amharic-bible/main/screenshots/book-selectorw.png) | ![Screenie 4](https://raw.githubusercontent.com/wesenseged/amharic-bible/main/screenshots/main-vieww.png) |
+| ![Screenie 3](https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selectorw.png) | ![Screenie 4](https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-vieww.png) |
 
 ## Installation
 
