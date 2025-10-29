@@ -2,7 +2,7 @@
 <component type="desktop">
     <metadata_license>CC0-1.0</metadata_license>
 
-  <id>org.wesen.bible</id>
+      <id>io.github.wesenseged.AmharicBible</id>
   <name>Amharic Bible</name>
   <summary>Read the Holy Bible in Amharic, beautifully designed with Kirigami</summary>
 
@@ -22,9 +22,10 @@
 </developer>
 
 
-  <launchable type="desktop-id">org.wesen.bible.desktop</launchable>
+  <launchable type="desktop-id">io.github.wesenseged.AmharicBible.desktop</launchable>
 
-  <url type="homepage">https://wesen.vercel.app</url>
+  <url type="homepage">https://github.com/wesenseged/amharic-bible</url>
+  <!-- <url type="homepage">https://wesen.vercel.app</url> -->
   <url type="bugtracker">https://github.com/wesenseged/Amharic-bible/issues</url>
   <url type="vcs-browser">https://github.com/wesenseged/Amharic-bible</url>
 

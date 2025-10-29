@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls as Controls
 import org.kde.kirigami as Kirigami
-import org.wesen.bible
+import io.github.wesenseged.AmharicBible
 
 Kirigami.ScrollablePage {
     id: welcomePage

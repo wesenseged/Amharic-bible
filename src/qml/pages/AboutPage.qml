@@ -33,6 +33,6 @@ Kirigami.AboutPage {
             }
         ],
         "copyrightStatement": "© 2025 Wesenseged",
-        "desktopFileName": "org.wesen.bible"
+        "desktopFileName": "io.github.wesenseged.AmharicBible"
     }
 }

@@ -15,7 +15,8 @@ int main(int argc, char *argv[]) {
   QApplication::setOrganizationName(QStringLiteral("Wesenseged"));
   QApplication::setOrganizationDomain(QStringLiteral("wesen.vercel.app"));
   QApplication::setApplicationName(QStringLiteral("Amharic Bible"));
-  QApplication::setDesktopFileName(QStringLiteral("org.wesen.bible"));
+  QApplication::setDesktopFileName(
+      QStringLiteral("io.github.wesenseged.AmharicBible"));
   QGuiApplication::setWindowIcon(QIcon(QStringLiteral(":/assets/bible.png")));
 
   QApplication::setStyle(QStringLiteral("breeze"));
@@ -23,11 +24,11 @@ int main(int argc, char *argv[]) {
     QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
   }
 
-  KAboutData aboutData(QStringLiteral("org.wesen.bible"), // not "org.kde."
-                       i18n("Amharic Bible"), QStringLiteral("1.0"),
-                       i18n("Offline Amharic Bible Reader"),
-                       KAboutLicense::GPL_V3,
-                       i18n("© 2025 Wesenseged Community"));
+  KAboutData aboutData(
+      QStringLiteral("io.github.wesenseged.AmharicBible"), // not "org.kde."
+      i18n("Amharic Bible"), QStringLiteral("1.0"),
+      i18n("Offline Amharic Bible Reader"), KAboutLicense::GPL_V3,
+      i18n("© 2025 Wesenseged Community"));
 
   KAboutData::setApplicationData(aboutData);
 
@@ -42,7 +43,7 @@ int main(int argc, char *argv[]) {
   qputenv("QML_XHR_ALLOW_FILE_READ", "1");
   engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
   engine.addImportPath(QStringLiteral("/usr/lib64/qt6/qml"));
-  engine.loadFromModule("org.wesen.bible", "Main");
+  engine.loadFromModule("io.github.wesenseged.AmharicBible", "Main");
 
   if (engine.rootObjects().isEmpty())
     return -1;

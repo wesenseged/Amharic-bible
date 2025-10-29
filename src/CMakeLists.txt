@@ -3,7 +3,7 @@ add_executable(amharic-bible
 
 ecm_add_qml_module(amharic-bible
     URI 
-    org.wesen.bible
+    io.github.wesenseged.AmharicBible
 )
 target_sources(amharic-bible
     PRIVATE

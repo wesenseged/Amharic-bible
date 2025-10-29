@@ -2,7 +2,7 @@
 [Desktop Entry]
 Name=Amharic Bible
 Exec=amharic-bible
-Icon=org.wesen.bible
+Icon=io.github.wesenseged.AmharicBible
 Type=Application
 Terminal=false
 Categories=Education;
