@@ -1,6 +1,5 @@
 import QtQuick 2.15
 import org.kde.kirigami as Kirigami
-import io.github.wesenseged.AmharicBible
 
 Kirigami.ApplicationWindow {
     id: root
