@@ -22,7 +22,7 @@
 </developer>
 
 
-  <launchable type="desktop-id">io.github.wesenseged.AmharicBible.desktop</launchable>
+  <launchable type="desktop-id">io.github.wesenseged.Amharic-bible.desktop</launchable>
 
   <url type="homepage">https://github.com/wesenseged/Amharic-bible</url>
   <url type="bugtracker">https://github.com/wesenseged/Amharic-bible/issues</url>
