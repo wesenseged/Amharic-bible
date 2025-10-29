@@ -3,7 +3,7 @@ add_executable(amharic-bible
 
 ecm_add_qml_module(amharic-bible
     URI 
-    io.github.wesenseged.AmharicBible
+    io.github.wesenseged.Amharic-bible
 )
 target_sources(amharic-bible
     PRIVATE
@@ -112,3 +112,4 @@ target_link_libraries(amharic-bible
 )
 
 install(TARGETS amharic-bible ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(DIRECTORY qml/ DESTINATION ${KDE_INSTALL_QMLDIR}/io/github/wesenseged/Amharic-bible)
