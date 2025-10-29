@@ -25,7 +25,7 @@
 Use your system's app store to find Amharic bible or run this command to install it.
 
 ```BASH
-flatpak install org.wesen.bible
+flatpak install io.github.wesenseged.AmharicBible
 ```
 
 ---
@@ -40,28 +40,6 @@ flatpak install org.wesen.bible
 - ⚡ Fully offline — no internet required
 
 ---
-
-## 🧰 Build & Installation
-
-### 🔹 Native build
-
-```bash
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-make
-sudo make install
-````
-
-### 🔹 Flatpak (recommended)
-
-```bash
-flatpak-builder --force-clean --user --install build-dir org.wesen.bible.json
-flatpak run org.wesen.bible
-```
-
----
-
 ## 🧾 License
 
 - **Code:** [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
