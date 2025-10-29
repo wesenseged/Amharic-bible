@@ -23,8 +23,9 @@
 				}
 			],
 			"post-install": [
-				"install -Dm644 ../src/assets/bible.png /app/share/icons/hicolor/64x64/apps/org.wesen.bible.png",
-				"install -Dm644 ../data/org.wesen.bible.desktop /app/share/applications/org.wesen.bible.desktop"
+				"install -Dm644 ../src/assets/bible.png /app/share/icons/hicolor/512x512/apps/org.wesen.bible.png",
+				"install -Dm644 ../data/org.wesen.bible.desktop /app/share/applications/org.wesen.bible.desktop",
+				"install -Dm644 ../data/org.wesen.bible.metainfo.xml /app/share/metainfo/org.wesen.bible.metainfo.xml"
 			]
 		}
 	]
