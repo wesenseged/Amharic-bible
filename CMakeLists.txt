@@ -37,8 +37,9 @@ install(PROGRAMS data/io.github.wesenseged.Amharic-bible.desktop DESTINATION ${K
 install(FILES data/io.github.wesenseged.Amharic-bible.desktop
         DESTINATION share/applications)
 
-# install(FILES data/io.github.wesenseged.Amharic-bible.png
-#         DESTINATION share/icons/hicolor/128x128/apps)
+install(FILES data/data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
+
+        DESTINATION share/icons/hicolor/128x128/apps)
 
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
