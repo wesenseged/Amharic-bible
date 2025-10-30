@@ -36,12 +36,14 @@ add_subdirectory(src)
 install(PROGRAMS data/io.github.wesenseged.Amharic-bible.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 # install(FILES data/io.github.wesenseged.Amharic-bible.desktop
 #         DESTINATION share/applications)
-install(FILES data/icons/hicolor/128x128/apps/io.github.wesenseged.Amharic-bible.png
-        DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/128x128/apps)
-install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible.png
-        DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/256x256/apps)
-install(FILES data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
-        DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/512x512/apps)
+# install(FILES data/icons/hicolor/128x128/apps/io.github.wesenseged.Amharic-bible.png
+#         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/128x128/apps)
+# install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible.png
+#         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/256x256/apps)
+# install(FILES data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
+#         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/512x512/apps)
+
+install(FILES src/assets/bible.png DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
 
 # install(FILES src/assets/bible.png
 #         DESTINATION share/icons/hicolor/512x512/apps)
