@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="0.0.1" encoding="UTF-8"?>
 <component type="desktop">
     <metadata_license>CC0-1.0</metadata_license>
 
@@ -31,15 +31,19 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selector.png</image>
+          <caption>Book selector (dark mode)</caption>
     </screenshot>
-    <screenshot type="dark">
+    <screenshot >
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-view.png</image>
+    <caption>Reading view (dark mode)</caption>
     </screenshot>
-    <screenshot type="light">
+    <screenshot >
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selectorw.png</image>
+          <caption>Book selector (light mode)</caption>
     </screenshot>
-    <screenshot type="light">
+    <screenshot >
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-vieww.png</image>
+          <caption>Reading view (light mode)</caption>
     </screenshot>
   </screenshots>
 
@@ -53,7 +57,7 @@
 
 
   <releases>
-    <release version="1.0" date="2025-10-29">
+    <release version="0.0.1" date="2025-10-29">
       <description>
         <p>Initial public release of Amharic Bible for KDE and Flathub.</p>
       </description>
