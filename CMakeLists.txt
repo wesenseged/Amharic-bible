@@ -33,8 +33,11 @@ ecm_find_qmlmodule(org.kde.kirigami REQUIRED)
 
 add_subdirectory(src)
 
-install(FILES data/io.github.wesenseged.Amharic-bible.desktop
-        DESTINATION share/applications)
+# Install desktop file
+install(PROGRAMS data/io.github.wesenseged.Amharic-bible.desktop
+        DESTINATION ${KDE_INSTALL_APPDIR})
+
+# Install icons for multiple sizes
 install(FILES data/icons/hicolor/128x128/apps/io.github.wesenseged.Amharic-bible.png
         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/128x128/apps)
 install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible.png
@@ -42,14 +45,5 @@ install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible
 install(FILES data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/512x512/apps)
 
-install(PROGRAMS data/io.github.wesenseged.Amharic-bible.desktop DESTINATION ${KDE_INSTALL_APPDIR})
-
-# install(FILES src/assets/io.github.wesenseged.Amharic-bible.png DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
-
-# install(FILES src/assets/bible.png
-#         DESTINATION share/icons/hicolor/512x512/apps)
-
-
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
-
 
