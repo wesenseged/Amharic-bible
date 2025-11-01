@@ -45,5 +45,8 @@ install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible
 install(FILES data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/512x512/apps)
 
+install(FILES data/io.github.wesenseged.Amharic-bible.metainfo.xml DESTINATION share/metainfo)
+
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
