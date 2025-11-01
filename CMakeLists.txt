@@ -45,8 +45,11 @@ install(FILES data/icons/hicolor/256x256/apps/io.github.wesenseged.Amharic-bible
 install(FILES data/icons/hicolor/512x512/apps/io.github.wesenseged.Amharic-bible.png
         DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/512x512/apps)
 # Install metainfo
+# install(FILES data/io.github.wesenseged.Amharic-bible.metainfo.xml
+#         DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES data/io.github.wesenseged.Amharic-bible.metainfo.xml
-        DESTINATION ${KDE_INSTALL_METAINFODIR})
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/metainfo)
+
 
 
 
