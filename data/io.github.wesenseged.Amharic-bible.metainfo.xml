@@ -4,7 +4,7 @@
 
   <id>io.github.wesenseged.Amharic-bible</id>
   <name>Amharic Bible</name>
-  <summary>Read the Holy Bible in Amharic, beautifully designed with Kirigami</summary>
+  <summary>Read the Bible in Amharic</summary>
 
   <description>
     <p>
@@ -17,7 +17,8 @@
       and quick navigation between books and chapters.
     </p>
   </description>
-  <developer id="wesen.vercel.app">
+
+<developer id="wesen.vercel.app">
   <name>Abenezer Wesenseged</name>
 </developer>
 
@@ -27,6 +28,12 @@
   <url type="homepage">https://github.com/wesenseged/Amharic-bible</url>
   <url type="bugtracker">https://github.com/wesenseged/Amharic-bible/issues</url>
   <url type="vcs-browser">https://github.com/wesenseged/Amharic-bible</url>
+
+   <branding>
+      <color type="primary" scheme_preference="light">#FAD6D6</color>
+      <color type="primary" scheme_preference="dark">#F67474</color>
+  </branding>
+
 
   <screenshots>
     <screenshot type="default">
@@ -55,13 +62,30 @@
 
   <project_license>GPL-3.0-only</project_license>
 
+<releases>
+  <release version="0.0.3" date="2025-11-03">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.3</url>
+    <description>
+      <p>Added summary</p>
+      <p>Added branding colors for light and dark themes</p>
+      <p>Fixed links in README</p>
+    </description>
+  </release>
 
-  <releases>
-    <release version="0.0.1" date="2025-10-29">
-      <description>
-        <p>Initial public release of Amharic Bible for KDE and Flathub.</p>
-      </description>
-    </release>
-  </releases>
+  <release version="0.0.2" date="2025-11-02">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.2</url>
+    <description>
+      <p>Updated runtime version</p>
+    </description>
+  </release>
+
+  <release version="0.0.1" date="2025-10-29">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.1</url>
+    <description>
+      <p>Initial public release of Amharic Bible for KDE and Flathub</p>
+    </description>
+  </release>
+</releases>
+
 </component>
 

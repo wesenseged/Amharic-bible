@@ -1,13 +1,17 @@
 # 📖 Amharic Bible
 
-<p align="center"><img width="128" src="https://wesen.vercel.app/projects/Ebible.png">
+<p align="center">
+<img width="128" src="https://wesen.vercel.app/projects/Ebible.png" alt="App icon"/>
+</p>
+
 <h1 align="center">Amharic Bible</h1>
 
-<p align="center"> A modern, offline Amharic Bible reader built with Kirigami and Qt6.
+<p align="center"> 
+A modern Amharic Bible reader built with Kirigami and Qt 6 — beautiful, fast, and offline.
 </p>
 
 <p align="center">
-    <a href='https://flathub.org/apps/org.wesen.bible'><img width='190' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a><br><br>
+    <a href='https://flathub.org/apps/io.github.wesenseged.Amharic-bible'><img width='190' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/></a><br><br>
 </p>
 
 
@@ -22,10 +26,10 @@
 
 ### Flathub
 
-Use your system's app store to find Amharic bible or run this command to install it.
+Use your system's app store to find Amharic Bible or run this command to install it.
 
 ```BASH
-flatpak install io.github.wesenseged.AmharicBible
+flatpak install flathub io.github.wesenseged.Amharic-bible
 ```
 
 ---
@@ -58,7 +62,7 @@ Redistribution of the text outside this application is **not permitted**.
 ## 🚀 Contributing
 
 Contributions, translations, and feedback are welcome!
-If you find a bug or want to suggest a feature, please [open an issue](https://github.com/wesenseged/amharic-bible/issues).
+If you find a bug or want to suggest a feature, please [open an issue](https://github.com/wesenseged/Amharic-bible/issues).
 
 ---
 
@@ -66,7 +70,7 @@ If you find a bug or want to suggest a feature, please [open an issue](https://g
 
 * 🏠 Website: [https://wesen.vercel.app](https://wesen.vercel.app)
 * 💬 Contact: [wseged@proton.me](mailto:wseged@proton.me)
-* 📦 Flathub: [https://flathub.org/apps/details/org.wesen.bible](https://flathub.org/apps/details/org.wesen.bible)
+* 📦 Flathub: [https://flathub.org/apps/details/io.github.wesenseged.Amharic-bible](https://flathub.org/apps/details/io.github.wesenseged.Amharic-bible)
 
 ---
 
