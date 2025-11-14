@@ -17,8 +17,9 @@ int main(int argc, char *argv[]) {
   QApplication::setApplicationName(QStringLiteral("Amharic Bible"));
   QApplication::setDesktopFileName(
       QStringLiteral("io.github.wesenseged.Amharic-bible"));
-  QGuiApplication::setWindowIcon(
-      QIcon(QStringLiteral(":/assets/io.github.wesenseged.Amharic-bible.png")));
+
+  app.setWindowIcon(
+      QIcon::fromTheme(QStringLiteral("io.github.wesenseged.Amharic-bible")));
 
   QApplication::setStyle(QStringLiteral("breeze"));
   if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {

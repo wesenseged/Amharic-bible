@@ -92,8 +92,6 @@ qt_add_resources(amharic-bible "resources"
         data/3john.json
         data/jude.json
         data/revelation.json
-
-        assets/io.github.wesenseged.Amharic-bible.png
 )
 
 

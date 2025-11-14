@@ -37,20 +37,20 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selector.png</image>
-          <caption>Book selector (dark mode)</caption>
-    </screenshot>
-    <screenshot >
-      <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-view.png</image>
-    <caption>Reading view (dark mode)</caption>
-    </screenshot>
-    <screenshot >
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selectorw.png</image>
           <caption>Book selector (light mode)</caption>
     </screenshot>
     <screenshot >
       <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-vieww.png</image>
           <caption>Reading view (light mode)</caption>
+    </screenshot>
+    <screenshot >
+      <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/book-selector.png</image>
+          <caption>Book selector (dark mode)</caption>
+    </screenshot>
+    <screenshot >
+      <image>https://raw.githubusercontent.com/wesenseged/Amharic-bible/main/screenshots/main-view.png</image>
+    <caption>Reading view (dark mode)</caption>
     </screenshot>
   </screenshots>
 
@@ -63,6 +63,15 @@
   <project_license>GPL-3.0-only</project_license>
 
 <releases>
+  <release version="0.0.4" date="2025-11-14">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.4</url>
+    <description>
+      <p>Added keywords</p>
+      <p>Fixed app icon</p>
+      <p>Fixed screenshots</p>
+    </description>
+  </release>
+
   <release version="0.0.3" date="2025-11-03">
     <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.3</url>
     <description>
@@ -86,6 +95,12 @@
     </description>
   </release>
 </releases>
+
+<keywords>
+  <keyword>Ethiopia</keyword>
+  <keyword>Amharic</keyword>
+  <keyword>Bible</keyword>
+</keywords>
 
 </component>
 
