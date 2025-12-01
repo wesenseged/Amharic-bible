@@ -4,7 +4,7 @@
 
   <id>io.github.wesenseged.Amharic-bible</id>
   <name>Amharic Bible</name>
-  <summary>Read the Bible in Amharic</summary>
+  <summary>Study scripture</summary>
 
   <description>
     <p>
@@ -63,6 +63,15 @@
   <project_license>GPL-3.0-only</project_license>
 
 <releases>
+  <release version="0.0.5" date="2025-12-1">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.5</url>
+    <description>
+      <p>Fixed max and min font size bug</p>
+      <p>Added category</p>
+      <p>Fixed summary</p>
+    </description>
+  </release>
+
   <release version="0.0.4" date="2025-11-14">
     <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.4</url>
     <description>
@@ -95,6 +104,11 @@
     </description>
   </release>
 </releases>
+
+
+<categories>
+    <category>Education</category>
+</categories>
 
 <keywords>
   <keyword>Ethiopia</keyword>

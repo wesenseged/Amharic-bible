@@ -8,7 +8,9 @@ import org.kde.kirigami 2.15 as Kirigami
 Kirigami.ScrollablePage {
     id: bookPage
 
-    property var fontSize: 16
+    property int minFontSize: 10
+    property int maxFontSize: 30
+    property var fontSize: settings.fontSize
     property string bookName: ""
     property int chapterCount: 0
     property string dataFile: ""
@@ -19,7 +21,7 @@ Kirigami.ScrollablePage {
     Settings {
         id: settings
         category: "General"
-        property alias fontSize: bookPage.fontSize
+        property int fontSize: 16
     }
 
     function loadchapter(boo) {
@@ -49,19 +51,19 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             icon.name: "zoom-in"
             shortcut: "Ctrl++"
+            enabled: bookPage.fontSize < bookPage.maxFontSize
             onTriggered: {
-                if (bookPage.fontSize < 24) {
-                    bookPage.fontSize += 2;
-                }
+                bookPage.fontSize += 2;
+                settings.fontSize = bookPage.fontSize;
             }
         },
         Kirigami.Action {
             icon.name: "zoom-out"
             shortcut: "Ctrl+-"
+            enabled: bookPage.fontSize > bookPage.minFontSize
             onTriggered: {
-                if (bookPage.fontSize > 10) {
-                    bookPage.fontSize -= 2;
-                }
+                bookPage.fontSize -= 2;
+                settings.fontSize = bookPage.fontSize;
             }
         }
     ]
