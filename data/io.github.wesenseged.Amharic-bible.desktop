@@ -6,3 +6,4 @@ Icon=io.github.wesenseged.Amharic-bible
 Type=Application
 Terminal=false
 Categories=Education;
+StartupWMClass=org.kde.io.github.wesenseged.Amharic-bible
