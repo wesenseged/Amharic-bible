@@ -46,7 +46,8 @@ flatpak install flathub io.github.wesenseged.Amharic-bible
 ---
 ## 🧾 License
 
-- **Code:** [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+- **Code & assets** is licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
+See the [LICENSES/GPL-3.0-or-later.txt](LICENSES/GPL-3.0-or-later.txt) file for more details.
 - **Bible Text:** © [WordProject](https://www.wordproject.org) — used with permission.
 Redistribution of the text outside this application is **not permitted**.
 

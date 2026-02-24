@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Abenezer Wesenseged <wseged@proton.me>
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 import QtQuick 2.15
 import QtQml 2.15
 import QtCore
@@ -11,6 +15,7 @@ Kirigami.ScrollablePage {
     property int minFontSize: 10
     property int maxFontSize: 30
     property var fontSize: settings.fontSize
+    onFontSizeChanged: settings.fontSize = fontSize
     property string bookName: ""
     property int chapterCount: 0
     property string dataFile: ""
@@ -54,7 +59,6 @@ Kirigami.ScrollablePage {
             enabled: bookPage.fontSize < bookPage.maxFontSize
             onTriggered: {
                 bookPage.fontSize += 2;
-                settings.fontSize = bookPage.fontSize;
             }
         },
         Kirigami.Action {
@@ -63,7 +67,6 @@ Kirigami.ScrollablePage {
             enabled: bookPage.fontSize > bookPage.minFontSize
             onTriggered: {
                 bookPage.fontSize -= 2;
-                settings.fontSize = bookPage.fontSize;
             }
         }
     ]

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Abenezer Wesenseged <wseged@proton.me>
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 import QtQuick 2.15
 import org.kde.kirigami 2.20 as Kirigami
 import org.wesen.about
@@ -32,7 +36,7 @@ Kirigami.AboutPage {
                 "spdx": "GPL-3.0"
             }
         ],
-        "copyrightStatement": "© 2025 Wesenseged",
+        "copyrightStatement": "© 2026 Wesenseged",
         "desktopFileName": "io.github.wesenseged.Amharic-bible"
     }
 }

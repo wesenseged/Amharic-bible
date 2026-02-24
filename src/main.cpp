@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Abenezer Wesenseged <wseged@proton.me>
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 #include <KAboutData>
 #include <KIconTheme>
 #include <KLocalizedContext>
@@ -30,7 +34,7 @@ int main(int argc, char *argv[]) {
       QStringLiteral("io.github.wesenseged.Amharic-bible"), // not "org.kde."
       i18n("Amharic Bible"), QStringLiteral("1.0"),
       i18n("Offline Amharic Bible Reader"), KAboutLicense::GPL_V3,
-      i18n("© 2025 Wesenseged Community"));
+      i18n("© 2026 Wesenseged Community"));
 
   KAboutData::setApplicationData(aboutData);
 

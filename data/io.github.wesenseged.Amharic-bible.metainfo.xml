@@ -60,15 +60,24 @@
     <binary>amharic-bible</binary>
   </provides>
 
-  <project_license>GPL-3.0-only</project_license>
+  <project_license>GPL-3.0-or-later</project_license>
 
 <releases>
+  <release version="0.0.7" date="2026-2-24">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.7</url>
+    <description>
+      <p>Fix spelling mistakes across the project</p>
+      <p>Add proper REUSE (SPDX) licensing compliance</p>
+    </description>
+  </release>
+
   <release version="0.0.6" date="2025-12-12">
     <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.6</url>
     <description>
       <p>add StartupWMClass</p>
     </description>
   </release>
+
   <release version="0.0.5" date="2025-12-1">
     <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.5</url>
     <description>
