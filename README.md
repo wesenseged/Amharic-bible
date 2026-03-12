@@ -1,5 +1,3 @@
-# 📖 Amharic Bible
-
 <p align="center">
 <img width="128" src="https://wesen.vercel.app/projects/Ebible.png" alt="App icon"/>
 </p>
@@ -32,49 +30,53 @@ Use your system's app store to find Amharic Bible or run this command to install
 flatpak install flathub io.github.wesenseged.Amharic-bible
 ```
 
+##### Compiling manually
+
+Before proceeding, ensure that you have the necessary packages installed for Qt 6 and KDE Frameworks.
+
+```Bash
+git clone https://github.com/wesenseged/Amharic-bible
+cd Amharic-bible
+
+cmake -B build/ --install-prefix ~/.local
+cmake --build build/
+cmake --install build/
+amharic-bible
+```
+
+To uninstall:
+```BASH
+cmake --build build/ --target uninstall
+
+```
 ---
 
-## ✨ Features
+## Features
 
-- 📚 Full Amharic Bible text (© WordProject)
-- 🧭 Clean navigation between books and chapters
-- 🌗 Light and dark themes
-- 🔠 Adjustable font size
-- 💡 Modern KDE Kirigami interface
-- ⚡ Fully offline — no internet required
+- Full Amharic Bible text
+- Clean navigation between books and chapters
+- Search
+- Adjustable font size
+
+-  Fully offline
 
 ---
-## 🧾 License
+## License
 
 - **Code & assets** is licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
 See the [LICENSES/GPL-3.0-or-later.txt](LICENSES/GPL-3.0-or-later.txt) file for more details.
-- **Bible Text:** © [WordProject](https://www.wordproject.org) — used with permission.
+- **Bible Text:** © [WordProject](https://www.wordproject.org) - used with permission.
 Redistribution of the text outside this application is **not permitted**.
 
 ---
 
-## 🙌 Credits
-
-* **Developer & Maintainer:** [Abenezer Wesenseged](https://wesen.vercel.app)
+## Credits
 * **Inspiration, Design & Source Text:** [WordProject.org](https://wordproject.org)
-* **Framework:** KDE Kirigami & Qt6
 ---
 
-## 🚀 Contributing
+## Contributing
 
 Contributions, translations, and feedback are welcome!
 If you find a bug or want to suggest a feature, please [open an issue](https://github.com/wesenseged/Amharic-bible/issues).
 
----
-
-## 🌍 Links
-
-* 🏠 Website: [https://wesen.vercel.app](https://wesen.vercel.app)
-* 💬 Contact: [wseged@proton.me](mailto:wseged@proton.me)
-* 📦 Flathub: [https://flathub.org/apps/details/io.github.wesenseged.Amharic-bible](https://flathub.org/apps/details/io.github.wesenseged.Amharic-bible)
-
----
-
-> 🕊️ *“The word of God is living and active.” — Hebrews 4:12*
-
-
+> 🕊️ *“The word of God is living and active.” -- Hebrews 4:12*

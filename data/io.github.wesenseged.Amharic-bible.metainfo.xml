@@ -70,54 +70,6 @@
       <p>Add proper REUSE (SPDX) licensing compliance</p>
     </description>
   </release>
-
-  <release version="0.0.6" date="2025-12-12">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.6</url>
-    <description>
-      <p>add StartupWMClass</p>
-    </description>
-  </release>
-
-  <release version="0.0.5" date="2025-12-1">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.5</url>
-    <description>
-      <p>Fixed max and min font size bug</p>
-      <p>Added category</p>
-      <p>Fixed summary</p>
-    </description>
-  </release>
-
-  <release version="0.0.4" date="2025-11-14">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.4</url>
-    <description>
-      <p>Added keywords</p>
-      <p>Fixed app icon</p>
-      <p>Fixed screenshots</p>
-    </description>
-  </release>
-
-  <release version="0.0.3" date="2025-11-03">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.3</url>
-    <description>
-      <p>Added summary</p>
-      <p>Added branding colors for light and dark themes</p>
-      <p>Fixed links in README</p>
-    </description>
-  </release>
-
-  <release version="0.0.2" date="2025-11-02">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.2</url>
-    <description>
-      <p>Updated runtime version</p>
-    </description>
-  </release>
-
-  <release version="0.0.1" date="2025-10-29">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.1</url>
-    <description>
-      <p>Initial public release of Amharic Bible for KDE and Flathub</p>
-    </description>
-  </release>
 </releases>
 
 
