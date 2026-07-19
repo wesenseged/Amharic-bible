@@ -49,33 +49,24 @@ To uninstall:
 cmake --build build/ --target uninstall
 
 ```
----
 
 ## Features
-
 - Full Amharic Bible text
 - Clean navigation between books and chapters
 - Search
 - Adjustable font size
+- Fully offline
 
--  Fully offline
-
----
 ## License
-
 - **Code & assets** is licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
 See the [LICENSES/GPL-3.0-or-later.txt](LICENSES/GPL-3.0-or-later.txt) file for more details.
 - **Bible Text:** © [WordProject](https://www.wordproject.org) - used with permission.
 Redistribution of the text outside this application is **not permitted**.
 
----
-
 ## Credits
 * **Inspiration, Design & Source Text:** [WordProject.org](https://wordproject.org)
----
 
 ## Contributing
-
 Contributions, translations, and feedback are welcome!
 If you find a bug or want to suggest a feature, please [open an issue](https://github.com/wesenseged/Amharic-bible/issues).
 
