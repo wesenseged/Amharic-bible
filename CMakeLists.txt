@@ -34,7 +34,7 @@ ecm_find_qmlmodule(org.kde.kirigami REQUIRED)
 add_subdirectory(src)
 
 # Install desktop file
-install(PROGRAMS data/io.github.wesenseged.Amharic-bible.desktop
+install(FILES data/io.github.wesenseged.Amharic-bible.desktop
         DESTINATION ${KDE_INSTALL_APPDIR})
 
 # Install icons for multiple sizes

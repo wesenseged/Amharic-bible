@@ -1,5 +1,5 @@
 <p align="center">
-<img width="128" src="https://wesen.vercel.app/projects/Ebible.png" alt="App icon"/>
+<img width="128" src="https://wesen.vercel.app/assets/Ebible-yoPP1xcW.png" alt="App icon"/>
 </p>
 
 <h1 align="center">Amharic Bible</h1>

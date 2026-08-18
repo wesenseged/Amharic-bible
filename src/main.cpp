@@ -4,7 +4,7 @@
 
 #include <KAboutData>
 #include <KIconTheme>
-#include <KLocalizedContext>
+#include <KLocalizedQmlContext>
 #include <KLocalizedString>
 #include <QApplication>
 #include <QIcon>
@@ -45,9 +45,10 @@ int main(int argc, char *argv[]) {
                            });
 
   QQmlApplicationEngine engine;
+  KLocalization::setupLocalizedContext(&engine);
 
   qputenv("QML_XHR_ALLOW_FILE_READ", "1");
-  engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+
   engine.addImportPath(QStringLiteral("/usr/lib64/qt6/qml"));
   engine.loadFromModule("io.github.wesenseged.Amharic-bible", "Main");
 
