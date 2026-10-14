@@ -7,15 +7,16 @@
   <summary>Study scripture</summary>
 
   <description>
-    <p>
-      Amharic Bible is a modern, offline Bible reader built with KDE Kirigami and Qt6.
-      It features a clean and elegant reading experience, full offline access to the Amharic Bible text,
-      and an interface inspired by WordProject.
-    </p>
-    <p>
-      The app supports both light and dark themes, adjustable font size,
-      and quick navigation between books and chapters.
-    </p>
+  <p>A beautiful and fast desktop app to read the Amharic Bible.</p>
+  <p>Features</p>
+	  <ul>
+      <li>Search Books</li>
+      <li>Bookmarks</li>
+      <li>Adjustable Font Size</li>
+      <li>Easy Chapter Navigation</li>
+      <li>Fully Offline</li>
+      <li>Full Amharic Bible Text</li>
+	  </ul>
   </description>
 
 <developer id="wesen.vercel.app">
@@ -63,11 +64,12 @@
   <project_license>GPL-3.0-or-later</project_license>
 
 <releases>
-  <release version="0.0.7" date="2026-2-24">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.0.7</url>
+  <release version="0.2.7" date="2026-10-14">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.2.7</url>
     <description>
-      <p>Fix spelling mistakes across the project</p>
-      <p>Add proper REUSE (SPDX) licensing compliance</p>
+      <p>Bookmark books and specific chapters for quick and easy access later.</p>
+      <p>Align Bible verses to the left, center, or right.</p>
+      <p>Click an individual verse to copy its text to the clipboard.</p>
     </description>
   </release>
 </releases>

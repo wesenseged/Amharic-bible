@@ -9,20 +9,22 @@ import org.kde.kirigami as Kirigami
 
 Item {
     id: headerRoot
-    height: chapterCount > 100 ? 340 : 200
     property int chapterCount: 0
     property int selectedChapter: 1
+    property int alignment: Text.AlignLeft
 
     signal chapterRequested(int chapterNumber)
+    implicitHeight: contentLayout.implicitHeight
     Layout.fillWidth: true
     Layout.fillHeight: true
 
     ColumnLayout {
+        id: contentLayout
         anchors.fill: parent
         spacing: 20
 
         GridLayout {
-            columns: 23
+            columns: applicationWindow().width > 1100 ? 23 : 17
             columnSpacing: 4
             Layout.alignment: Qt.AlignHCenter
 
@@ -32,7 +34,7 @@ Item {
                 delegate: Controls.Button {
                     id: chapterBtn
                     text: index + 1
-                    width: 36
+                    width: 40
                     height: 36
                     hoverEnabled: true
 
@@ -49,7 +51,7 @@ Item {
 
                     onClicked: {
                         headerRoot.selectedChapter = index + 1;
-                        headerRoot.chapterRequested(headerRoot.selectedChapter); // Emit the signal with a parameter.
+                        headerRoot.chapterRequested(headerRoot.selectedChapter);
                     }
                 }
             }
@@ -58,8 +60,7 @@ Item {
         Kirigami.Heading {
             text: i18n("ምዕራፍ %1", headerRoot.selectedChapter)
             font.pointSize: 24
-            color: Kirigami.Theme.negativeTextColor
-            Layout.alignment: Qt.AlignCenter
+            Layout.alignment: headerRoot.alignment
         }
     }
 }

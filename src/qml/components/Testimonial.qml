@@ -85,7 +85,8 @@ ColumnLayout {
                 onClicked: applicationWindow().pageStack.push(Qt.resolvedUrl("BookPage.qml"), {
                     bookName: bookName,
                     chapterCount: chapterCount,
-                    dataFile: dataFile
+                    dataFile: dataFile,
+                    selectedChapter: 1
                 })
             }
         }

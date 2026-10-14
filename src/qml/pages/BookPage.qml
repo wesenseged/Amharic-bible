@@ -8,70 +8,107 @@ import QtCore
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15 as Controls
 import org.kde.kirigami 2.15 as Kirigami
+import org.kde.kquickcontrolsaddons as KQuickControlsAddons
 
 Kirigami.ScrollablePage {
     id: bookPage
-
     property int minFontSize: 10
     property int maxFontSize: 30
-    property var fontSize: settings.fontSize
-    onFontSizeChanged: settings.fontSize = fontSize
     property string bookName: ""
     property int chapterCount: 0
     property string dataFile: ""
     property int selectedChapter: 1
 
     property ListModel versesModel: ListModel {}
+    header: Kirigami.InlineMessage {
+        id: clipboardMessage
+        visible: false
+
+        showCloseButton: true
+        type: Kirigami.MessageType.Positive
+    }
 
     Settings {
         id: settings
         category: "General"
         property int fontSize: 16
+        property int alignment: Text.AlignLeft
     }
 
     function loadchapter(boo) {
-        if (bookPage.dataFile !== "") {
-            var xhr = new XMLHttpRequest();
+        if (bookPage.dataFile === "")
+            return;
+        var xhr = new XMLHttpRequest();
 
-            xhr.open("GET", Qt.resolvedUrl(bookPage.dataFile));
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === XMLHttpRequest.DONE && (xhr.status === 0 || xhr.status === 200)) {
-                    var json = JSON.parse(xhr.responseText);
-                    versesModel.clear();
-                    var chapter = json.book[boo - 1];
-                    for (var j = 0; j < chapter.verses.length; j++) {
-                        var v = chapter.verses[j];
-                        versesModel.append({
-                            number: v.verse,
-                            verse: v.text
-                        });
-                    }
+        xhr.open("GET", Qt.resolvedUrl(bookPage.dataFile));
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE && (xhr.status === 0 || xhr.status === 200)) {
+                var json = JSON.parse(xhr.responseText);
+                versesModel.clear();
+                var chapter = json.book[boo - 1];
+                for (var j = 0; j < chapter.verses.length; j++) {
+                    var v = chapter.verses[j];
+
+                    versesModel.append({
+                        number: v.verse,
+                        verse: v.text
+                    });
                 }
-            };
-            xhr.send();
-        }
+            }
+        };
+        xhr.send();
     }
 
     actions: [
         Kirigami.Action {
+            text: "Align Left"
+            icon.name: "align-horizontal-left"
+            onTriggered: settings.alignment = Qt.AlignLeft
+        },
+        Kirigami.Action {
+            text: "Align Center"
+            icon.name: "align-horizontal-center"
+            onTriggered: settings.alignment = Qt.AlignHCenter
+        },
+        Kirigami.Action {
+            text: "Align Right"
+            icon.name: "align-horizontal-right"
+            onTriggered: settings.alignment = Qt.AlignRight
+        },
+        Kirigami.Action {
+            separator: true
+        },
+        Kirigami.Action {
+            text: "Bookmark"
+            icon.name: "bookmarks"
+            onTriggered: {
+                applicationWindow().savePage(bookPage.bookName, bookPage.dataFile, bookPage.chapterCount, bookPage.selectedChapter);
+                clipboardMessage.visible = true;
+                clipboardMessage.text = "Saved to bookmarks";
+            }
+        },
+        Kirigami.Action {
+            separator: true
+        },
+        Kirigami.Action {
             icon.name: "zoom-in"
             shortcut: "Ctrl++"
-            enabled: bookPage.fontSize < bookPage.maxFontSize
+            enabled: settings.fontSize < bookPage.maxFontSize
             onTriggered: {
-                bookPage.fontSize += 2;
+                settings.fontSize += 2;
             }
         },
         Kirigami.Action {
             icon.name: "zoom-out"
             shortcut: "Ctrl+-"
-            enabled: bookPage.fontSize > bookPage.minFontSize
+            enabled: settings.fontSize > bookPage.minFontSize
             onTriggered: {
-                bookPage.fontSize -= 2;
+                settings.fontSize -= 2;
             }
         }
     ]
 
-    Component.onCompleted: loadchapter(1)
+    Component.onCompleted: loadchapter(selectedChapter)
 
     ColumnLayout {
         id: contentLayout
@@ -84,9 +121,12 @@ Kirigami.ScrollablePage {
         }
 
         DefaultHeader {
+            id: switcher
+            alignment: settings.alignment
             chapterCount: bookPage.chapterCount
             selectedChapter: bookPage.selectedChapter
             onChapterRequested: chapterNumber => {
+                bookPage.selectedChapter = chapterNumber;
                 loadchapter(chapterNumber);
             }
         }
@@ -94,21 +134,35 @@ Kirigami.ScrollablePage {
         Repeater {
             model: bookPage.versesModel
             Layout.preferredWidth: 400
-            Layout.alignment: Qt.AlignHCenter
-            delegate: RowLayout {
+            delegate: Controls.Button {
+                id: customButton
+                text: number + "  " + verse
                 Layout.fillWidth: true
-                Layout.leftMargin: Kirigami.Units.largeSpacing
-
-                Kirigami.Heading {
-                    text: number
-                    color: Kirigami.Theme.negativeTextColor
-                    font.pointSize: bookPage.fontSize
+                background: Rectangle {
+                    color: Kirigami.Theme.backgroundColor
+                    radius: 4
                 }
-                Controls.Label {
-                    text: verse
+
+                contentItem: Text {
+                    id: buttonText
+                    text: `<font color="${Kirigami.Theme.textColor}">${number}</font>  <font color="${Kirigami.Theme.negativeTextColor}">${verse}</font>`
+                    anchors.centerIn: parent
+                    font.pointSize: settings.fontSize
+                    horizontalAlignment: settings.alignment
                     wrapMode: Text.WordWrap
-                    Layout.fillWidth: true
-                    font.pointSize: bookPage.fontSize
+                    color: Kirigami.Theme.negativeTextColor
+
+                    leftPadding: 20
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                KQuickControlsAddons.Clipboard {
+                    id: clipboard
+                }
+                onClicked: {
+                    clipboard.content = customButton.text;
+                    clipboardMessage.visible = true;
+                    clipboardMessage.text = "Copied current verse!";
                 }
             }
         }
