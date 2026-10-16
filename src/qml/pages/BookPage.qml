@@ -20,13 +20,6 @@ Kirigami.ScrollablePage {
     property int selectedChapter: 1
 
     property ListModel versesModel: ListModel {}
-    header: Kirigami.InlineMessage {
-        id: clipboardMessage
-        visible: false
-
-        showCloseButton: true
-        type: Kirigami.MessageType.Positive
-    }
 
     Settings {
         id: settings
@@ -83,8 +76,7 @@ Kirigami.ScrollablePage {
             icon.name: "bookmarks"
             onTriggered: {
                 applicationWindow().savePage(bookPage.bookName, bookPage.dataFile, bookPage.chapterCount, bookPage.selectedChapter);
-                clipboardMessage.visible = true;
-                clipboardMessage.text = "Saved to bookmarks";
+                showPassiveNotification("Saved to bookmarks", 3000);
             }
         },
         Kirigami.Action {
@@ -161,8 +153,7 @@ Kirigami.ScrollablePage {
                 }
                 onClicked: {
                     clipboard.content = customButton.text;
-                    clipboardMessage.visible = true;
-                    clipboardMessage.text = "Copied current verse!";
+                    showPassiveNotification("Copied current verse!", 3000);
                 }
             }
         }

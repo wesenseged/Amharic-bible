@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Follow quality guidelines for beasonable window size. 
+- use showPassiveNotification instead of InlineMessage.
+
 ## [0.2.7] - 2026-10-14
 
 ### Added
