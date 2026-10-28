@@ -64,12 +64,11 @@
   <project_license>GPL-3.0-or-later</project_license>
 
 <releases>
-  <release version="0.2.7" date="2026-10-14">
-    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.2.7</url>
+  <release version="0.2.8" date="2026-10-28">
+    <url type="details">https://github.com/wesenseged/Amharic-bible/releases/tag/0.2.8</url>
     <description>
-      <p>Bookmark books and specific chapters for quick and easy access later.</p>
-      <p>Align Bible verses to the left, center, or right.</p>
-      <p>Click an individual verse to copy its text to the clipboard.</p>
+      <p>use showPassiveNotification instead of InlineMessage.</p>
+      <p>Follow quality guidelines for beasonable window size.</p>
     </description>
   </release>
 </releases>
